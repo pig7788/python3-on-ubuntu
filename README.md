@@ -8,7 +8,7 @@ This is easy and flexible to use. When you want to build a service without many 
 isExisted=$(pip3 list | grep jupyterlab | awk '{print $1}') # prevent a bug when build an initial container without target service
 
 if [[ -z "$isExisted" ]]; then
-pip3 install jupyterlab # you can add more libs you want or directly import multiple libs in a txt file
+        pip3 install jupyterlab # you can add more libs you want or directly import multiple libs in a txt file
 fi
 
 jupyter-lab # execute service
