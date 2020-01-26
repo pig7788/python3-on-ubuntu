@@ -5,7 +5,7 @@ This is easy and flexible to use. When you want to build a service without many 
 #### 1. Create a shell script file:jupyterlab-start.sh
 ```shell
 #!/bin/bash 
-isExisted=$(pip3 list | grep jupyterlab | awk '{print $1}') # prevent a bug when build an initial container without target service
+isExisted=$(pip3 list | grep jupyterlab | awk '{print $1}') # prevent a bug when build an initial service without target lib
 
 if [[ -z "$isExisted" ]]; then
         pip3 install jupyterlab # you can add more libs you want or directly import multiple libs in a txt file
