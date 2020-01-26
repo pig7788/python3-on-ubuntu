@@ -24,7 +24,7 @@ services:
     ...
     ...
     entrypoint:
-      - <path in container>/jupyterlab-start.sh # execute shell script file
+      - <path in container>/jupyterlab-start.sh # execute shell script file in container
 ```
 ## Change log
 * `1.0.2` - add ubuntu packages for installing mysqlclient in python3
